@@ -1,0 +1,20 @@
+from tkinter import *
+
+# creating main window
+mw = Tk()
+
+def say_hello():
+    name = userinput.get()
+    text.config(text='OK')
+
+
+userinput = Entry(mw,width=20,font=('calibri',18))
+userinput.pack(pady=10,padx=10)
+
+text = Label(mw, text='Enter your Name', font=('calibri',14))
+text.pack(pady=5)
+
+btn = Button(mw,text='Say hllo',font=('calibri',12))
+btn.pack(pady=20)
+
+mw.mainloop()
